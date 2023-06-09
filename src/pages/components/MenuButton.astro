@@ -1,0 +1,10 @@
+---
+const { styling, addr } = Astro.props;
+console.log(styling, addr);
+---
+
+<div class={styling}>
+    <a href={addr}>
+        <slot />
+    </a>
+</div>
